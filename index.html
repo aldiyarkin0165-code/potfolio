@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио | Алдияр Алтайбеков</title>
+  <meta name="description" content="Персональный сайт-портфолио Алдияра Алтайбекова, ученика НИШ и Cap Education. Мой путь в IT, цели и лучшие проекты.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ФОНОВЫЕ ЭЛЕМЕНТЫ -->
+  <div class="bg-grid-overlay"></div>
+  <svg class="bg-vector-curves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <!-- Изогнутые топографические координатные линии для кибер-эффекта -->
+    <path d="M-100,450 Q720,-50 1540,450" fill="none" />
+    <path d="M-100,550 Q720,50 1540,550" fill="none" />
+    <path d="M-100,650 Q720,150 1540,650" fill="none" />
+    <path d="M-100,750 Q720,250 1540,750" fill="none" />
+    <path d="M720,-100 Q720,450 720,1000" fill="none" />
+    <path d="M520,-100 Q620,450 720,1000" fill="none" />
+    <path d="M920,-100 Q820,450 720,1000" fill="none" />
+  </svg>
+
+  <!-- ШАПКА САЙТА (КИБЕР-НАВБАР) -->
+  <header id="header">
+    <div class="nav-wrapper">
+      <!-- Логотип короны / W -->
+      <a href="#" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8L8 16L12 8L16 16L21 8" /></svg>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="active">О себе</a></li>
+          <li><a href="#goals">Мой путь</a></li>
+          <li><a href="#mentor">Ментор</a></li>
+          <li><a href="#progress">Прогресс</a></li>
+          <li><a href="#hobbies">Хобби</a></li>
+          <li><a href="#projects">Работы</a></li>
+        </ul>
+      </nav>
+
+      <!-- Поиск и экшены -->
+      <div class="nav-actions">
+        <div class="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" placeholder="Поиск..." aria-label="Поиск">
+        </div>
+        
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Переключить тему">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <a href="#contact" class="user-profile-btn" aria-label="Личный кабинет / Связь">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- БЛОК 1: О СЕБЕ (ГЕРОЙ-СЕКЦИЯ) -->
+    <section id="about">
+      <div class="container hero-redesign-wrapper">
+        <!-- Левая аннотация -->
+        <div class="hero-annotation-left">
+          Стиль вобрал в себя основные принципы минимализма и добавил к ним неожиданные акценты.
+        </div>
+
+        <!-- Правая аннотация -->
+        <div class="hero-annotation-right">
+          Возникнув как реакция на перенасыщение и хаотические композиции последних лет, он обращает внимание на легкость и сдержанную выразительность.
+        </div>
+
+        <!-- Верхний заголовок "ПОРТФОЛИО" -->
+        <div class="hero-main-title">ПОРТФОЛИО</div>
+
+        <!-- Центральный элемент: Деформированный 3D Глобус Земли -->
+        <div class="earth-visual-container">
+          <img src="images/earth.jpg" alt="Деформированная 3D Земля" class="earth-image">
+        </div>
+
+        <!-- Нижний ряд заголовков "ВЕБ + РАЗРАБОТКА" -->
+        <div class="hero-bottom-row">
+          <div class="hero-bottom-title">ВЕБ <span>+</span></div>
+          <div class="hero-bottom-title">РАЗРАБОТКА</div>
+        </div>
+
+        <!-- Факты и кнопки внизу блока -->
+        <div class="hero-details-row">
+          <div class="hero-facts-list">
+            <div class="hero-fact">
+              <span>Имя</span>
+              <span>Алдияр Алтайбеков</span>
+            </div>
+            <div class="hero-fact">
+              <span>Возраст / Класс</span>
+              <span>14 лет / 8 класс НИШ</span>
+            </div>
+            <div class="hero-fact">
+              <span>Специализация</span>
+              <span>Fullstack Junior</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Мои работы</a>
+            <a href="#contact" class="btn btn-outline">Связаться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 2: МОЯ ЦЕЛЬ & БЛОК 3: КАК ПРИШЕЛ В IT -->
+    <section id="goals">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">История и Путь</span>
+          <h2 class="section-title">Цели <span>&</span> IT-Путь</h2>
+        </div>
+        
+        <div class="dual-section-grid">
+          <!-- БЛОК 2: Моя цель -->
+          <div class="content-card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <h3>Моя цель</h3>
+            <p>
+              Я стремлюсь стать профессиональным программистом, чтобы разрабатывать технологичные, удобные и полезные продукты для общества, автоматизирующие рутину и помогающие людям решать экологические и социальные задачи.
+            </p>
+            <ul class="goals-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Создание социально полезных веб-приложений и ботов
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Исследование ИИ-интеграций в повседневную жизнь
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Внесение вклада в автоматизацию и экологические проекты Казахстана
+              </li>
+            </ul>
+          </div>
+
+          <!-- БЛОК 3: Как я пришел в IT -->
+          <div class="content-card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Как я пришел в IT</h3>
+            <p>
+              Всё началось с одной покупки и искреннего детского любопытства:
+            </p>
+            <div class="story-timeline">
+              <div class="story-step">
+                <h4>Получение первого ноутбука</h4>
+                <p>Родители купили мне ноутбук, ставший точкой входа в мир компьютерных технологий.</p>
+              </div>
+              <div class="story-step">
+                <h4>Изучение устройства системы</h4>
+                <p>Я начал с интересом изучать программы, настройки и базовую логику работы компьютера.</p>
+              </div>
+              <div class="story-step">
+                <h4>Поступление в Cap Education</h4>
+                <p>Я захотел программировать профессионально и записался на полноценный курс обучения.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 4: МОЙ МЕНТОР -->
+    <section id="mentor">
+      <div class="container mentor-container">
+        <div class="mentor-card-visual">
+          <div class="mentor-avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+          </div>
+          <h3>Аида</h3>
+          <p>Вдохновляющий ментор</p>
+          <div class="mentor-org">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Cap Education
+          </div>
+        </div>
+
+        <div class="mentor-details">
+          <span class="section-subtitle">Мой ментор</span>
+          <h3>Наставничество и поддержка</h3>
+          <div class="quote-card">
+            <p>
+              «Аида преподает мне программирование в Cap Education. Она открыла для меня мир чистого кода, научила правильно проектировать интерфейсы, использовать Git и решать логические задачи на JavaScript.»
+            </p>
+          </div>
+          <ul class="mentor-lessons">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Вдохновляет писать чистый и поддерживаемый семантический код.
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Научила дебажить код и использовать инспекторы браузера.
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Помогла перейти к полноценной верстке и деплою сайтов с нуля.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 5: ТОЧКА А → ТОЧКА Б -->
+    <section id="progress">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Динамика развития</span>
+          <h2 class="section-title">Точка А <span>→</span> Точка Б</h2>
+        </div>
+
+        <div class="progress-interactive-container">
+          <div class="progress-tabs">
+            <button class="tab-btn active" data-tab="point-a">Точка А (Старт)</button>
+            <button class="tab-btn" data-tab="point-b">Точка Б (Сейчас)</button>
+          </div>
+
+          <!-- Панель Точки А -->
+          <div class="progress-content-panel active" id="point-a">
+            <div class="progress-grid">
+              <div class="progress-text">
+                <h4>Старт обучения <span class="bg-red-glow">Точка А</span></h4>
+                <p>
+                  В начале своего пути я практически не разбирался в написании кода и разработке сайтов. Мои умения ограничивались использованием ноутбука для игр и учебы. Логика веб-интерфейсов казалась мне очень сложной и непонятной.
+                </p>
+                <div class="progress-skills-list">
+                  <div class="skill-bar-wrapper">
+                    <div class="skill-bar-info">
+                      <span>Написание кода (HTML/CSS)</span>
+                      <span>15%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                      <div class="skill-bar-fill fill-red" style="width: 15%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-bar-wrapper">
+                    <div class="skill-bar-info">
+                      <span>Веб-логика (JS / Python)</span>
+                      <span>5%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                      <div class="skill-bar-fill fill-red" style="width: 5%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-bar-wrapper">
+                    <div class="skill-bar-info">
+                      <span>Деплой и Git</span>
+                      <span>0%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                      <div class="skill-bar-fill fill-red" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-visual-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+                <h5>Обычный пользователь</h5>
+                <p>Использовал компьютер только для базовых повседневных задач.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Панель Точки Б -->
+          <div class="progress-content-panel" id="point-b">
+            <div class="progress-grid">
+              <div class="progress-text">
+                <h4>Результат обучения <span class="bg-green-glow">Точка Б</span></h4>
+                <p>
+                  Сейчас я уверенно верстаю адаптивные сайты на HTML и CSS с нуля, пишу интерактивные скрипты на JS, создаю автоматизированных Telegram-ботов на Python и публикую готовые проекты на GitHub Pages.
+                </p>
+                <div class="progress-skills-list">
+                  <div class="skill-bar-wrapper">
+                    <div class="skill-bar-info">
+                      <span>Написание кода (HTML/CSS)</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                      <div class="skill-bar-fill fill-green" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-bar-wrapper">
+                    <div class="skill-bar-info">
+                      <span>Веб-логика (JS / Python)</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                      <div class="skill-bar-fill fill-green" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-bar-wrapper">
+                    <div class="skill-bar-info">
+                      <span>Деплой и Git</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                      <div class="skill-bar-fill fill-green" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-visual-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <h5>Junior Developer</h5>
+                <p>Создаю полноценные веб-интерфейсы и автоматизирую задачи с помощью кода.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 6: ХОББИ И ИНТЕРЕСЫ -->
+    <section id="hobbies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Вне программирования</span>
+          <h2 class="section-title">Хобби <span>&</span> Увлечения</h2>
+        </div>
+
+        <div class="hobbies-grid">
+          <!-- Хобби 1 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <div class="hobby-info">
+              <h3>Волейбол</h3>
+              <p>
+                Я люблю играть в волейбол во внеучебное время. Командный спорт учит меня взаимодействовать в группе, быстро принимать решения на поле и дает прекрасный заряд бодрости и физического тонуса после работы за компьютером.
+              </p>
+            </div>
+          </div>
+
+          <!-- Хобби 2 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <div class="hobby-info">
+              <h3>Помощь родителям</h3>
+              <p>
+                Я всегда нахожу время, чтобы помочь родителям по дому и семейным делам. Это приучает меня к ответственности, порядку в быту и позволяет проводить больше качественного и полезного времени с моей семьей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 7: МОИ ЛУЧШИЕ РАБОТЫ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Проекты</span>
+          <h2 class="section-title">Лучшие <span>Работы</span></h2>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="web">Сайты</button>
+          <button class="filter-btn" data-filter="bot">Боты</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Проект 1: Телеграм-бот -->
+          <div class="project-card" data-category="bot">
+            <div class="project-image-box">
+              <div class="project-svg-banner">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                <span>TG BOT</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">API</span>
+              </div>
+              <h3>Здоровый образ жизни</h3>
+              <p>
+                Интерактивный Телеграм-бот, мотивирующий вести правильный образ жизни. Рассчитывает индекс массы тела, предлагает программы тренировок и дает рекомендации по повседневному питанию.
+              </p>
+              <div class="project-actions">
+                <a href="https://t.me/trener25max_bot" target="_blank" rel="noopener" class="btn btn-primary">Запустить бота</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Проект 2: CyberHelpTeen -->
+          <div class="project-card" data-category="web">
+            <div class="project-image-box">
+              <div class="project-svg-banner">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M12 2a5 5 0 0 0-5 5v4h10V7a5 5 0 0 0-5-5z"></path></svg>
+                <span>CYBER HELP</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JS</span>
+              </div>
+              <h3>Профилактика кибербуллинга</h3>
+              <p>
+                Сайт для помощи подросткам, столкнувшимся с интернет-травлей. Предлагает психологические ресурсы, инструкции по блокировке токсичных пользователей и контакты доверия.
+              </p>
+              <div class="project-actions">
+                <a href="https://aldiyarkin0165-code.github.io/CyberHelpTeen/" target="_blank" rel="noopener" class="btn btn-primary">Открыть сайт</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Проект 3: Реабилитационный центр -->
+          <div class="project-card" data-category="web">
+            <div class="project-image-box">
+              <img src="images/rehab.png" alt="Сайт реабилитационного центра">
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">ООП</span>
+              </div>
+              <h3>Реабилитационный центр</h3>
+              <p>
+                Сайт реабилитационного центра для детей с особыми образовательными потребностями (ООП). Удобная структура и доступное оформление для быстрого поиска услуг центра.
+              </p>
+              <div class="project-actions">
+                <span class="btn btn-outline" style="cursor: default; border-color: var(--text-muted); color: var(--text-muted);">В разработке</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Проект 4: EcoQazaq -->
+          <div class="project-card" data-category="web">
+            <div class="project-image-box">
+              <div class="project-svg-banner">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                <span>ECO QAZAQ</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Экология</span>
+              </div>
+              <h3>Экология Казахстана</h3>
+              <p>
+                Информационный проект, призывающий жителей Казахстана сохранять чистоту окружающей среды, правильно сортировать мусор и бережно относиться к природным ресурсам страны.
+              </p>
+              <div class="project-actions">
+                <a href="https://aldiyarkin0165-code.github.io/ecoqazaqproject/" target="_blank" rel="noopener" class="btn btn-primary">Открыть сайт</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 8: GITHUB И СВЯЗЬ -->
+    <section id="contact" class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Контакты</span>
+        <h2 class="section-title">GitHub <span>&</span> Форма связи</h2>
+      </div>
+
+      <div class="contact-container">
+        <!-- GitHub Блок -->
+        <div class="github-cta-card">
+          <div>
+            <div class="github-logo-box">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <h3>Мой GitHub</h3>
+            <p>
+              Все исходные файлы моих проектов находятся в моем публичном репозитории на GitHub. Я уделяю большое внимание чистоте кода и понятной истории коммитов.
+            </p>
+            <div class="github-stats">
+              <div class="stat-box">
+                <span class="stat-num">4+</span>
+                <span class="stat-label">Проекта</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Репозиторий</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://github.com/aldiyarkin0165-code" target="_blank" rel="noopener" class="btn btn-primary github-link-btn">
+            Открыть GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Форма обратной связи -->
+        <div class="contact-form-box">
+          <h3>Отправить сообщение</h3>
+          <p class="subtitle">Если у вас появились вопросы или предложения по сотрудничеству.</p>
+          
+          <form id="contact-form" autocomplete="off">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Ваше имя</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Имя" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email" class="form-label">Ваш Email</label>
+              <input type="email" id="form-email" class="form-control" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Сообщение</label>
+              <textarea id="form-message" class="form-control" placeholder="Привет! Давай сделаем совместный сайт..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">Отправить письмо</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer>
+    <div class="container footer-wrapper">
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/aldiyarkin0165-code" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/trener25max_bot" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; 2026 Алдияр Алтайбеков. CapEducation Capstone. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНОЕ ОКНО -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="success-modal">
+      <div class="modal-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h4>Письмо успешно отправлено!</h4>
+      <p>Я получил ваше сообщение и обязательно отвечу на указанный вами электронный адрес.</p>
+      <button class="btn btn-primary" id="modal-close-btn" style="width: 100%; justify-content: center;">Отлично</button>
+    </div>
+  </div>
+
+  <!-- Кнопка наверх -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Наверх">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
